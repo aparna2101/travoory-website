@@ -57,21 +57,22 @@ const Footer = () => {
                   Contact Us
                 </Link>
               </li>
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Terms & Conditions
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  FAQs
-                </a>
-              </li>
+<li>
+  <Link to="/terms" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+    Terms & Conditions
+  </Link>
+</li>
+<li>
+  <Link to="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+    Privacy Policy
+  </Link>
+</li>
+<li>
+  <Link to="/faqs" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+    FAQs
+  </Link>
+</li>
+
             </ul>
           </div>
 

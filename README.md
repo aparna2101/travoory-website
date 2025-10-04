@@ -3,7 +3,7 @@ A modern, responsive travel booking website built with React and Tailwind CSS, a
 
 ## Demo
 
-Check out the live demo here: [https://travoory-website.vercel.app/](https://travoory-website.vercel.app/)
+Check out the live demo here: [https://travoory-website.vercel.app/](https://travoory-website-jxbk.vercel.app/)
 
 ## Features
 

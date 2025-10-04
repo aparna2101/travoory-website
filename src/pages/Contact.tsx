@@ -36,7 +36,8 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
-          <div className="bg-card rounded-2xl p-8 shadow-lg border border-border">
+<div className="bg-card rounded-2xl p-4 shadow-lg border border-border max-h-[600px] overflow-auto">
+
             <h2 className="text-2xl font-bold mb-6">Send us a Message</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">

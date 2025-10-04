@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { MapPin, Calendar, Users, Search } from "lucide-react";
+import { useState, useEffect } from "react";
+import { MapPin, Calendar, Users, Search, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useNavigate } from "react-router-dom";
@@ -9,7 +9,23 @@ const SearchBar = () => {
   const [to, setTo] = useState("");
   const [date, setDate] = useState("");
   const [travelers, setTravelers] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
+
+  // Debounce loading simulation for "To" input
+  useEffect(() => {
+    if (!to.trim()) {
+      setIsLoading(false);
+      return;
+    }
+
+    setIsLoading(true);
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 500); // 500ms debounce
+
+    return () => clearTimeout(timeout);
+  }, [to]);
 
   const handleSearch = () => {
     navigate("/destinations");
@@ -33,11 +49,19 @@ const SearchBar = () => {
           </div>
         </div>
 
-        {/* To */}
+        {/* To with spinner */}
         <div className="relative">
           <label className="block text-sm font-medium mb-2">To</label>
           <div className="relative">
             <MapPin className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+            {isLoading ? (
+              <Loader2
+                className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground animate-spin"
+                style={{ pointerEvents: "none" }}
+              />
+            ) : (
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground" />
+            )}
             <Input
               type="text"
               placeholder="Destination"

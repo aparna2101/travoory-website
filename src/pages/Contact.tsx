@@ -169,14 +169,20 @@ const Contact = () => {
             </div>
 
             {/* Map Placeholder */}
-            <div className="bg-card rounded-2xl overflow-hidden shadow-lg border border-border">
-              <div className="aspect-video bg-muted flex items-center justify-center">
-                <MapPin className="w-12 h-12 text-muted-foreground" />
-              </div>
-              <div className="p-4 text-center">
-                <p className="text-sm text-muted-foreground">Visit us at our office</p>
-              </div>
-            </div>
+<div className="bg-card rounded-2xl overflow-hidden shadow-lg border border-border">
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7213.568241526357!2d82.98364759067151!3d25.31145615942048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398e2dfbc4d72de9%3A0xb7bc10aa82f824f8!2sSigra%2C%20Varanasi%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1759562420397!5m2!1sen!2sin"
+    width="100%"
+    height="300"
+    style={{ border: 0 }}
+    allowFullScreen
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
+  <div className="p-4 text-center">
+    <p className="text-sm text-muted-foreground">Visit us at our office</p>
+  </div>
+</div>
           </div>
         </div>
       </div>

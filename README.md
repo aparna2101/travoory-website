@@ -1,19 +1,25 @@
 # Travoory – Travel Booking Website 🌍
+A modern, responsive travel booking website built with React and Tailwind CSS, allowing users to explore destinations, view packages, and easily book their trips.
 
-A modern and responsive travel booking website built with **React**, **TypeScript**, **Tailwind CSS**, and **Vite**.
+## Demo
 
-## 🚀 Features
-- Browse and search travel destinations
-- Booking and contact pages
-- Fully mobile responsive
-- Deployed on Vercel
+Check out the live demo here: [https://travoory-website.vercel.app/](https://travoory-website.vercel.app/)
 
-## 🛠️ Tech Stack
-- React + TypeScript
-- Tailwind CSS
+## Features
+
+- Responsive design for mobile and desktop
+- Browse travel destinations and packages
+- Terms & Conditions, Privacy Policy, and FAQ pages
+- Social media integration (Facebook, Instagram, LinkedIn, X)
+- Smooth navigation using React Router
+- Deployed with Vercel for fast loading
+
+## Technologies Used
+
 - Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-## 📦 Setup Instructions
-```bash
-npm install
-npm run dev
+
